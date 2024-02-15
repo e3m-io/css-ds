@@ -27,6 +27,10 @@
 	}
 }
 
+a.btn {
+	text-decoration: none;
+}
+
 @mixin themeLight() {
 	.btn--wt-primary.btn--vt-normal {
 		@include bg(primary, 600);
