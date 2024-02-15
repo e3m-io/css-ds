@@ -28,7 +28,7 @@
 }
 
 @mixin themeLight() {
-	.btn--wt-primary.btn--vt-default {
+	.btn--wt-primary.btn--vt-normal {
 		@include bg(primary, 600);
 		&:hover {
 			@include bg(primary, 700);
@@ -37,13 +37,13 @@
 			@include bg(primary, 800);
 		}
 	}
-	.btn--wt-secondary.btn--vt-default {
+	.btn--wt-secondary.btn--vt-normal {
 		border: 1px solid rgba(0, 0, 0, 0.1);
 		&:hover {
 			@include bg(primary, 25);
 		}
 	}
-	.btn--wt-tertiary.btn--vt-default {
+	.btn--wt-tertiary.btn--vt-normal {
 		&:hover {
 			@include color(primary, 600);
 		}
@@ -51,7 +51,7 @@
 }
 
 @mixin themeDark() {
-	.btn--wt-primary.btn--vt-default {
+	.btn--wt-primary.btn--vt-normal {
 		@include bg(primary, 800);
 		&:hover {
 			@include bg(primary, 700);
@@ -60,13 +60,13 @@
 			@include bg(primary, 800);
 		}
 	}
-	.btn--wt-secondary.btn--vt-default {
+	.btn--wt-secondary.btn--vt-normal {
 		@include bg(grey, 700);
 		&:hover {
 			@include bg(grey, 600);
 		}
 	}
-	.btn--wt-tertiary.btn--vt-default {
+	.btn--wt-tertiary.btn--vt-normal {
 		&:hover {
 			@include color(primary, 600);
 		}
