@@ -1,0 +1,60 @@
+@import "@e3m-io/css-utils/mixins/bg";
+@import "@e3m-io/css-utils/mixins/gap";
+@import "@e3m-io/css-utils/mixins/h";
+@import "@e3m-io/css-utils/mixins/m";
+@import "@e3m-io/css-utils/mixins/p";
+@import "@e3m-io/css-utils/mixins/text";
+
+.listbox,
+.listbox-group {
+	display: flex;
+	flex-direction: column;
+	user-select: none;
+}
+
+.listbox-group + .listbox-group,
+.listbox-group + .listbox-group-label {
+	&:before {
+		display: block;
+		content: "";
+	}
+	border-top: 1px solid var(--color--grey--200);
+}
+
+.listbox-group + .listbox-group-label:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.listbox-group-label {
+	@include px(1);
+	@include pt(1);
+	@include text-size(xs);
+	color: var(--color--muted);
+
+	font-weight: 500;
+	position: relative;
+}
+
+.listbox-item {
+	display: flex;
+	justify-items: center;
+	@include p(1);
+
+	&:hover {
+		@include bg(primary, 25);
+	}
+
+	&--active,
+	&[aria-selected="true"],
+	&:has(input:checked) {
+		@include bg(primary, 50);
+	}
+
+	&[aria-disabled="true"],
+	&:disabled,
+	&[disabled] {
+	}
+}

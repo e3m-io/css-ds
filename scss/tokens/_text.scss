@@ -1,0 +1,15 @@
+@mixin textScale {
+	--text-size--xxs: 11px;
+	--text-size--xs: 12px;
+	--text-size--sm: 13px;
+	--text-size--base: 14px;
+	--text-size--lg: 16px;
+	--text-size--xl: 18px;
+	--text-size--xxl: 22px;
+}
+
+@mixin textWeight {
+	--text-weight--base: 400;
+	--text-weight--emphasized: 500;
+	--text-weight--strong: 700;
+}

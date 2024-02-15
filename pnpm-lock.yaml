@@ -1,0 +1,18 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@e3m-io/css-utils':
+    specifier: github:e3m-io/css-utils
+    version: github.com/e3m-io/css-utils/76b8ce85ea024d2d7413192798a79893fa0d7cc2
+
+packages:
+
+  github.com/e3m-io/css-utils/76b8ce85ea024d2d7413192798a79893fa0d7cc2:
+    resolution: {tarball: https://codeload.github.com/e3m-io/css-utils/tar.gz/76b8ce85ea024d2d7413192798a79893fa0d7cc2}
+    name: '@e3m-io/css-utils'
+    version: 1.0.0
+    dev: false

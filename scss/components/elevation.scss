@@ -1,0 +1,23 @@
+.elevation {
+	&-sunken {
+		background-color: var(--bg--sunken);
+		color: var(--color--sunken);
+	}
+	&-default {
+		background-color: var(--bg--default);
+		color: var(--color--default);
+	}
+	&-raised {
+		background-color: var(--bg--raised);
+		border-radius: 4px;
+		color: var(--color--raised);
+		filter: drop-shadow(1px 2px 3px hsl(220deg 0% 50% / 0.2))
+			drop-shadow(2px 4px 6px hsl(220deg 0% 50% / 0.1))
+			drop-shadow(4px 8px 12px hsl(220deg 0% 50% / 0.1));
+		overflow: hidden;
+	}
+	&-overlay {
+		background-color: var(--bg--overlay);
+		color: var(--color--overlay);
+	}
+}

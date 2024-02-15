@@ -1,0 +1,9 @@
+@mixin borderLight {
+	--border-color--default: var(--color--grey--300);
+	--border-color--focused: var(--color--primary--500);
+}
+
+@mixin borderDark {
+	--border-color--default: var(--color--grey--700);
+	--border-color--focused: var(--color--primary--700);
+}

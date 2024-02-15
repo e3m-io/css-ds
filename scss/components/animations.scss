@@ -1,0 +1,39 @@
+.animation-fadein {
+	@mixin fadein-shown {
+		opacity: 1;
+	}
+
+	@mixin fadein-hidden {
+		opacity: 0;
+	}
+
+	transition-property: opacity;
+	will-change: opacity;
+
+	transition-duration: 100ms;
+	@include fadein-hidden;
+
+	&-enter,
+	&-appear {
+		@include fadein-hidden;
+	}
+
+	&-enter-active,
+	&-appear-active,
+	&-appear-done,
+	&-enter-done {
+		@include fadein-shown;
+	}
+
+	&-exit {
+		@include fadein-shown;
+	}
+
+	&-exit-active {
+		@include fadein-hidden;
+	}
+
+	&-exit-done {
+		display: none;
+	}
+}

@@ -1,0 +1,84 @@
+@import "@e3m-io/css-utils/mixins/border";
+@import "@e3m-io/css-utils/mixins/bg";
+@import "@e3m-io/css-utils/mixins/gap";
+@import "@e3m-io/css-utils/mixins/h";
+@import "@e3m-io/css-utils/mixins/p";
+@import "@e3m-io/css-utils/mixins/w";
+@import "./focus";
+
+@mixin invisible-input {
+	appearance: none;
+	background: transparent;
+	block-size: 100%;
+	border: none;
+	flex: 1;
+	outline: none;
+	padding: 0;
+}
+
+.form-control {
+	background: var(--bg--default);
+	border: 2px solid var(--border-color--default);
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: var(--color--default);
+	outline: none;
+	overflow: hidden;
+
+	&:focus,
+	&:focus-within {
+		@include focus;
+	}
+
+	&[aria-invalid="true"],
+	&--invalid {
+		border-color: red;
+	}
+
+	input {
+		@include invisible-input;
+	}
+}
+
+.form-control:not([type="radio"]):not([type="checkbox"]) {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	inline-size: 100%;
+	@include h(4);
+	@include px(1);
+}
+
+.form-control[type="radio"],
+.form-control[type="checkbox"] {
+	appearance: none;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0;
+	position: relative;
+	@include w(2);
+	@include h(2);
+}
+
+.form-control[type="checkbox"] {
+	&:checked::after {
+		background-color: var(--color--primary--400);
+		border-radius: 2px;
+		content: "";
+		position: absolute;
+		inset: 0;
+		transform: scale(70%);
+	}
+}
+
+.form-control[type="radio"] {
+	border-radius: 9999px;
+	&:checked::after {
+		border-radius: 9999px;
+		background-color: var(--color--primary--400);
+		content: "";
+		position: absolute;
+		inset: 0;
+		transform: scale(70%);
+	}
+}

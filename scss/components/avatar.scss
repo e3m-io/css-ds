@@ -1,0 +1,18 @@
+.avatar {
+	align-items: center;
+	block-size: 2.5em;
+	border-radius: 100%;
+	display: inline-flex;
+	font-weight: 700;
+	inline-size: 2.5em;
+	justify-content: center;
+	line-height: normal;
+	overflow: hidden;
+	text-transform: uppercase;
+
+	> * {
+		block-size: 100%;
+		inline-size: 100%;
+		object-fit: contain;
+	}
+}

@@ -1,0 +1,45 @@
+@import "@e3m-io/css-utils/mixins/m";
+.prose {
+	box-sizing: content-box;
+	max-inline-size: 75ch;
+	> * + * {
+		@include mt(2);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: var(--text-weight--strong);
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 1.75em;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+	li {
+		margin-inline-start: var(--scale-3);
+	}
+
+	ul {
+		list-style-type: disc;
+	}
+
+	ol {
+		list-style-type: decimal;
+	}
+}

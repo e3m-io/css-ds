@@ -1,0 +1,74 @@
+@import "@e3m-io/css-utils/mixins/bg";
+@import "@e3m-io/css-utils/mixins/color";
+@import "@e3m-io/css-utils/mixins/gap";
+@import "@e3m-io/css-utils/mixins/h";
+@import "@e3m-io/css-utils/mixins/m";
+@import "@e3m-io/css-utils/mixins/p";
+
+.btn {
+	@include gap(1);
+	@include h(4);
+	@include px(105);
+	align-items: center;
+	background-color: inherit;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: inherit;
+	cursor: pointer;
+	display: inline-flex;
+	flex-direction: row;
+	font-weight: var(--text-weight--emphasized);
+	justify-content: center;
+	transition: background 100ms, color 100ms;
+	user-select: none;
+
+	&--icon-only {
+		@include px(1);
+	}
+}
+
+@mixin themeLight() {
+	.btn--wt-primary.btn--vt-default {
+		@include bg(primary, 600);
+		&:hover {
+			@include bg(primary, 700);
+		}
+		&:active {
+			@include bg(primary, 800);
+		}
+	}
+	.btn--wt-secondary.btn--vt-default {
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		&:hover {
+			@include bg(primary, 25);
+		}
+	}
+	.btn--wt-tertiary.btn--vt-default {
+		&:hover {
+			@include color(primary, 600);
+		}
+	}
+}
+
+@mixin themeDark() {
+	.btn--wt-primary.btn--vt-default {
+		@include bg(primary, 800);
+		&:hover {
+			@include bg(primary, 700);
+		}
+		&:active {
+			@include bg(primary, 800);
+		}
+	}
+	.btn--wt-secondary.btn--vt-default {
+		@include bg(grey, 700);
+		&:hover {
+			@include bg(grey, 600);
+		}
+	}
+	.btn--wt-tertiary.btn--vt-default {
+		&:hover {
+			@include color(primary, 600);
+		}
+	}
+}
