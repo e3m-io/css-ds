@@ -12,7 +12,6 @@
 
 .form-control {
 	background: var(--bg--default);
-	border: 2px solid var(--border-color--default);
 	border-radius: 4px;
 	box-sizing: border-box;
 	color: var(--color--default);
@@ -75,4 +74,12 @@
 		inset: 0;
 		transform: scale(70%);
 	}
+}
+
+@mixin themeLight() {
+	border: 2px solid var(--color--grey--300);
+}
+
+@mixin themeDark() {
+	border: 2px solid var(--color--grey--900);
 }

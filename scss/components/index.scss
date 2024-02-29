@@ -2,15 +2,17 @@
 @use "./btn-group";
 @use "./btn" as btn;
 @use "./elevation";
-@use "./form-control";
+@use "./form-control" as formControl;
 @use "./form";
 @use "./listbox";
 @use "./prose";
 
 @mixin themeLight() {
 	@include btn.themeLight();
+	@include formControl.themeLight();
 }
 
 @mixin themeDark() {
 	@include btn.themeDark();
+	@include formControl.themeDark();
 }
