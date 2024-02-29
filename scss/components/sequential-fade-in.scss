@@ -1,0 +1,67 @@
+.sequential-fade-in {
+	opacity: 0;
+	transition-timing-function: ease;
+	transition-property: opacity;
+
+	> * {
+		opacity: 0;
+		transition-property: opacity;
+	}
+
+	&-enter-active,
+	&-appear-active {
+		> * {
+			transition-duration: 750ms;
+			transition-delay: 100ms;
+			transition-timing-function: cubic-bezier(0.64, 0, 0.78, 0);
+		}
+	}
+
+	&-exit-active {
+		transition-duration: 200ms;
+
+		> * {
+			transition-duration: 0ms;
+		}
+	}
+
+	&-enter-active {
+		transition-duration: 200ms;
+	}
+
+	&-enter,
+	&-appear {
+		opacity: 0;
+
+		> * {
+			opacity: 0;
+		}
+	}
+
+	&-enter-active,
+	&-appear-active,
+	&-appear-done,
+	&-enter-done {
+		opacity: 1;
+
+		> * {
+			opacity: 1;
+		}
+	}
+
+	&-exit {
+		opacity: 1;
+
+		> * {
+			opacity: 1;
+		}
+	}
+
+	&-exit-active {
+		opacity: 0;
+
+		> * {
+			opacity: 0;
+		}
+	}
+}
