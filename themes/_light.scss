@@ -1,4 +1,13 @@
-@mixin light {
+@use "./shared/colors" as colors;
+@use "./shared/scale" as scale;
+@use "./shared/text" as text;
+
+@mixin theme {
+	@include colors.colors;
+	@include scale.scale;
+	@include text.textScale;
+	@include text.textWeight;
+
 	--bg--sunken: var(--color--grey--100);
 	--color--sunken: var(--color--grey--900);
 
