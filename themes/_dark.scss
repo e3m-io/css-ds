@@ -1,7 +1,7 @@
 @use "./shared/colors" as colors;
 @use "./shared/scale" as scale;
 @use "./shared/text" as text;
-@use "../components/index" as components;
+@use "../scss/components/index" as components;
 @use "../scss/styles/index" as styles;
 
 @mixin theme {
