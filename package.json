@@ -8,7 +8,7 @@
 		"url": "https://github.com/e3m-io/css-ds.git"
 	},
 	"scripts": {
-		"prepare": "sass scss/components/index.scss dist/css/components.css && sass scss/styles/index.scss dist/css/styles.css "
+		"test": "sass scss/components/index.scss dist/css/components.css && sass scss/styles/index.scss dist/css/styles.css "
 	},
 	"packageManager": "pnpm@8.15.3",
 	"devDependencies": {
