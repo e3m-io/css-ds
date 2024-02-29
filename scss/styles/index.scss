@@ -1,4 +1,13 @@
 @use "./animations";
 @use "./bg";
+@use "./border";
 @use "./color";
 @use "./text";
+
+@mixin themeLight() {
+	@include border.themeLight();
+}
+
+@mixin themeDark() {
+	@include border.themeDark();
+}
