@@ -7,8 +7,11 @@
 		"type": "git",
 		"url": "https://github.com/e3m-io/css-ds.git"
 	},
-	"dependencies": {
-		"@e3m-io/css-utils": "github:e3m-io/css-utils"
+	"scripts": {
+		"prepare": "sass scss/components/index.scss dist/css/components.css && sass scss/styles/index.scss dist/css/styles.css "
 	},
-	"packageManager": "pnpm@8.15.3"
+	"packageManager": "pnpm@8.15.3",
+	"devDependencies": {
+		"sass": "^1.71.1"
+	}
 }

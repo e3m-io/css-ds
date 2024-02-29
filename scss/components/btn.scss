@@ -1,14 +1,7 @@
-@import "@e3m-io/css-utils/mixins/bg";
-@import "@e3m-io/css-utils/mixins/color";
-@import "@e3m-io/css-utils/mixins/gap";
-@import "@e3m-io/css-utils/mixins/h";
-@import "@e3m-io/css-utils/mixins/m";
-@import "@e3m-io/css-utils/mixins/p";
-
 .btn {
-	@include gap(1);
-	@include h(4);
-	@include px(105);
+	gap: var(--scale-1);
+	height: var(--scale-4);
+	padding-inline: var(--scale-105);
 	align-items: center;
 	background-color: inherit;
 	border: 1px solid transparent;
@@ -23,7 +16,7 @@
 	user-select: none;
 
 	&--icon-only {
-		@include px(1);
+		padding-inline: var(--scale-1);
 	}
 }
 

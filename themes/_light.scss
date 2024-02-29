@@ -1,0 +1,17 @@
+@mixin light {
+	--bg--sunken: var(--color--grey--100);
+	--color--sunken: var(--color--grey--900);
+
+	--bg--default: var(--color--grey--25);
+	--color--default: var(--color--grey--900);
+
+	--bg--raised: var(--color--grey--25);
+	--color--raised: var(--color--grey--900);
+
+	--bg--overlay: var(--color--grey--25);
+	--color--overlay: var(--color--grey--900);
+
+	--color--muted: var(--color--grey--500);
+
+	--border--focused: var(--color--primary--500);
+}

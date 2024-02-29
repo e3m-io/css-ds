@@ -1,7 +1,5 @@
-@import "@e3m-io/css-utils/mixins/m";
-
 .btn-group {
 	:not(.btn--icon-only) + :not(.btn--icon-only) {
-		@include ml(1);
+		margin-left: var(--scale-1);
 	}
 }
