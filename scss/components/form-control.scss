@@ -77,9 +77,13 @@
 }
 
 @mixin themeLight() {
-	border: 2px solid var(--color--grey--300);
+	.form-control {
+		border: 2px solid var(--color--grey--300);
+	}
 }
 
 @mixin themeDark() {
-	border: 2px solid var(--color--grey--900);
+	.form-control {
+		border: 2px solid var(--color--grey--900);
+	}
 }
