@@ -1,6 +1,8 @@
 @use "./shared/colors" as colors;
 @use "./shared/scale" as scale;
 @use "./shared/text" as text;
+@use "../scss/components/index" as components;
+@use "../scss/styles/index" as styles;
 
 @mixin theme {
 	@include colors.colors;
@@ -23,4 +25,6 @@
 	--color--muted: var(--color--grey--500);
 
 	--border--focused: var(--color--primary--500);
+
+	@include components.themeLight;
 }
