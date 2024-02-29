@@ -6,6 +6,7 @@
 @use "./form";
 @use "./listbox";
 @use "./prose";
+@use "./sequential-fade-in";
 
 @mixin themeLight() {
 	@include btn.themeLight();
