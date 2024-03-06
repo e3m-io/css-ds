@@ -2,6 +2,8 @@
 	align-items: center;
 	block-size: 2.5em;
 	border-radius: 100%;
+	border-style: solid;
+	border-width: 3px;
 	display: inline-flex;
 	font-weight: 700;
 	inline-size: 2.5em;
@@ -14,5 +16,23 @@
 		block-size: 100%;
 		inline-size: 100%;
 		object-fit: contain;
+	}
+}
+
+.avatar-group {
+	> * + * {
+		margin-left: -8px;
+	}
+}
+
+@mixin themeLight {
+	.avatar {
+		border-color: var(--color--gray--25);
+	}
+}
+
+@mixin themeDark {
+	.avatar {
+		border-color: var(--color--gray--900);
 	}
 }

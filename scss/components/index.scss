@@ -1,4 +1,4 @@
-@use "./avatar";
+@use "./avatar" as avatar;
 @use "./btn-group";
 @use "./btn" as btn;
 @use "./elevation";
@@ -9,11 +9,13 @@
 @use "./sequential-fade-in";
 
 @mixin themeLight() {
-	@include btn.themeLight();
-	@include formControl.themeLight();
+	@include avatar.themeLight;
+	@include btn.themeLight;
+	@include formControl.themeLight;
 }
 
 @mixin themeDark() {
-	@include btn.themeDark();
-	@include formControl.themeDark();
+	@include avatar.themeDark;
+	@include btn.themeDark;
+	@include formControl.themeDark;
 }
