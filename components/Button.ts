@@ -23,7 +23,7 @@ const buttonClassMatrix = {
 
 export const getButtonClasses = (
 	props: ButtonProps
-) => `btn hovered-bg ${buttonClassMatrix[props.variant][props.weight]}` as const;
+) => `btn hover focus-visible ${buttonClassMatrix[props.variant][props.weight]}` as const;
 
 export const getIconButtonClasses = (
 	props: ButtonProps
