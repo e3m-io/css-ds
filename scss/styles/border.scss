@@ -1,23 +1,16 @@
-@mixin themeLight() {
-	.elevation-default.border-strong,
-	.elevation-default .border-strong {
-		border-color: var(--color--gray--300);
-	}
-
-	.elevation-default.border-subtle,
-	.elevation-default .border-subtle {
-		border-color: var(--color--gray--200);
-	}
+.border-thin {
+	border-width: 1px;
+	border-style: solid;
 }
 
-@mixin themeDark() {
-	.elevation-default.border-strong,
-	.elevation-default .border-strong {
-		border-color: var(--color--gray--700);
-	}
+.border-primary {
+	border-color: var(--border--primary);
+}
 
-	.elevation-default.border-subtle,
-	.elevation-default .border-subtle {
-		border-color: var(--color--gray--700);
-	}
+.border-secondary {
+	border-color: var(--border--secondary);
+}
+
+.border-tertiary {
+	border-color: var(--border--tertiary);
 }

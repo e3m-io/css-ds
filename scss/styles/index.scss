@@ -4,10 +4,8 @@
 @use "./color";
 @use "./text";
 
-@mixin themeLight() {
-	@include border.themeLight();
+@mixin themeLight {
 }
 
-@mixin themeDark() {
-	@include border.themeDark();
+@mixin themeDark {
 }

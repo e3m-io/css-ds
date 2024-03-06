@@ -14,10 +14,31 @@ $shades: "brand", "gray", "green", "blue", "danger";
 	}
   }
 
+.bg-primary {
+	background: var(--bg--primary);
+	color: var(--text--primary);
+	--bg--hovered: var(--bg--primary__hover);
+}
+
+.bg-brand-solid {
+	background: var(--color--blue--600);
+	color: white;
+	--bg--hovered: var(--color--blue--700);
+	--color--hovered: white;
+}
+
+.bg-danger-solid {
+	background: var(--color--danger--600);
+	color: white;
+	--bg--hovered: var(--color--danger--700);
+	--color--hovered: white;
+}
+
+
 /**
  * Tell the target to use a --bg--hovered variable
  * if present for the hover color.
  */
-.bg-hovered:hover {
-	background: var(--bg--hovered);
+.hovered-bg:hover {
+	background: var(--bg--hovered, inherit);
 }

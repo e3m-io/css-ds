@@ -1,6 +1,6 @@
 @use "./avatar" as avatar;
 @use "./btn-group";
-@use "./btn" as btn;
+@use "./btn";
 @use "./elevation";
 @use "./form-control" as formControl;
 @use "./form";
@@ -10,12 +10,10 @@
 
 @mixin themeLight() {
 	@include avatar.themeLight;
-	@include btn.themeLight;
 	@include formControl.themeLight;
 }
 
 @mixin themeDark() {
 	@include avatar.themeDark;
-	@include btn.themeDark;
 	@include formControl.themeDark;
 }

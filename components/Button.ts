@@ -3,9 +3,27 @@ export type ButtonProps = {
 	weight: "primary" | "secondary" | "tertiary";
 }
 
+const buttonClassMatrix = {
+	"normal": {
+		"primary": "bg-brand-solid",
+		"secondary": "bg-primary border-thin border-primary",
+		"tertiary": ""
+	} as const,
+	"warning": {
+		"primary": "bg-warning-solid",
+		"secondary": "",
+		"tertiary": ""
+	} as const,
+	"danger": {
+		"primary": "bg-danger-solid",
+		"secondary": "",
+		"tertiary": ""
+	} as const
+} satisfies Record<ButtonProps["variant"], Record<ButtonProps["weight"], string>>
+
 export const getButtonClasses = (
 	props: ButtonProps
-) => `btn btn--vt-${props.variant} btn--wt-${props.weight}` as const;
+) => `btn hovered-bg ${buttonClassMatrix[props.variant][props.weight]}` as const;
 
 export const getIconButtonClasses = (
 	props: ButtonProps
