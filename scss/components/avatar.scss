@@ -1,15 +1,15 @@
 .avatar {
+	aspect-ratio: 1/1;
 	align-items: center;
-	block-size: 2.5em;
 	border-radius: 100%;
 	border-style: solid;
 	border-width: 3px;
 	display: inline-flex;
 	font-weight: 700;
-	inline-size: 2.5em;
 	justify-content: center;
 	line-height: normal;
 	overflow: hidden;
+	padding: 0.5em;
 	text-transform: uppercase;
 
 	> * {
