@@ -10,23 +10,5 @@
 	@include scale.scale;
 	@include text.textScale;
 	@include text.textWeight;
-
-	--bg--sunken: var(--color--gray--100);
-	--color--sunken: var(--color--gray--900);
-
-	--bg--default: var(--color--gray--25);
-	--color--default: var(--color--gray--900);
-
-	--bg--raised: var(--color--gray--25);
-	--color--raised: var(--color--gray--900);
-
-	--bg--overlay: var(--color--gray--25);
-	--color--overlay: var(--color--gray--900);
-
-	--color--muted: var(--color--gray--500);
-
-	--border--focused: var(--color--brand--500);
-
-	@include components.themeLight;
 	@include styles.themeLight;
 }

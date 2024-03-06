@@ -1,19 +1,9 @@
-@use "./avatar" as avatar;
+@use "./avatar";
 @use "./btn-group";
 @use "./btn";
 @use "./elevation";
-@use "./form-control" as formControl;
+@use "./form-control";
 @use "./form";
 @use "./listbox";
 @use "./prose";
 @use "./sequential-fade-in";
-
-@mixin themeLight() {
-	@include avatar.themeLight;
-	@include formControl.themeLight;
-}
-
-@mixin themeDark() {
-	@include avatar.themeDark;
-	@include formControl.themeDark;
-}

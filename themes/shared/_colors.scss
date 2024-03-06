@@ -70,9 +70,15 @@
 	--color--gray--900: #101828;
 	--color--gray--950: #0c111d;
 
+	--bg--brand--solid: var(--color--brand--600);
+
 	--bg--primary: white;
 	--bg--primary__hover: var(--color--gray--50);
 
+	--bg--secondary: var(--color--gray--50);
+	--bg--primary__hover: var(--color--gray--100);
+
+	--border--brand: var(--color--brand--300);
 	--border--primary: var(--color--gray--300);
 
 	--text--primary: var(--color--gray--900);
@@ -99,9 +105,15 @@
 	--color--gray--900: #161b26;
 	--color--gray--950: #0c111d;
 
+	--bg--brand--solid: var(--color--brand--600);
+
 	--bg--primary: var(--color--gray--950);
 	--bg--primary__hover: var(--color--gray--800);
 
+	--bg--secondary: var(--color--gray--900);
+	--bg--primary__hover: var(--color--gray--800);
+
+	--border--brand: var(--color--brand--400);
 	--border--primary: var(--color--gray--700);
 
 	--text--primary: var(--color--gray--50);

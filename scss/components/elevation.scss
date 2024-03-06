@@ -1,11 +1,11 @@
 .elevation {
 	&-sunken {
-		background-color: var(--bg--sunken);
-		color: var(--color--sunken);
+		background: var(--bg--secondary);
+		color: var(--text--primary);
 	}
 	&-default {
-		background-color: var(--bg--default);
-		color: var(--color--default);
+		background: var(--bg--primary);
+		color: var(--text--primary);
 	}
 	&-raised {
 		background-color: var(--bg--raised);

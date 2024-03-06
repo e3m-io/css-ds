@@ -1,4 +1,4 @@
 @mixin focus {
-	box-shadow: 0 0 0 0.15rem rgb(13 110 253 / 25%);
-	border-color: var(--border--focused) !important;
+	box-shadow: 0 0 0 3px rgb(from var(--color--brand--500) r g b / 24%);
+	border-color: var(--border--brand) !important;
 }
