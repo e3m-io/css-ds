@@ -6,7 +6,7 @@ export type ButtonProps = {
 const buttonClassMatrix = {
 	"normal": {
 		"primary": "bg-brand-solid",
-		"secondary": "bg-primary border-thin border-primary",
+		"secondary": "bg-primary border-thin",
 		"tertiary": ""
 	} as const,
 	"warning": {

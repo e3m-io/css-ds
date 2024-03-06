@@ -16,12 +16,21 @@ $shades: "brand", "gray", "green", "blue", "danger";
 
 .bg-primary {
 	background: var(--bg--primary);
+	border-color: var(--border--primary);
 	color: var(--text--primary);
 	--bg--hovered: var(--bg--primary--hover);
 }
 
+.bg-secondary {
+	background: var(--bg--secondary);
+	border-color: var(--border--secondary);
+	color: var(--text--secondary);
+	--bg--hovered: var(--bg--secondary--hover);
+}
+
 .bg-brand-solid {
 	background: var(--color--blue--600);
+	border-color: var(--border--primary);
 	color: white;
 	--bg--hovered: var(--color--blue--700);
 	--color--hovered: white;
