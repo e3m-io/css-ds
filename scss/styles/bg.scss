@@ -17,7 +17,7 @@ $shades: "brand", "gray", "green", "blue", "danger";
 .bg-primary {
 	background: var(--bg--primary);
 	color: var(--text--primary);
-	--bg--hovered: var(--bg--primary__hover);
+	--bg--hovered: var(--bg--primary--hover);
 }
 
 .bg-brand-solid {
