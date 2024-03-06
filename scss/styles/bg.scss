@@ -29,10 +29,10 @@ $shades: "brand", "gray", "green", "blue", "danger";
 }
 
 .bg-brand-solid {
-	background: var(--color--blue--600);
+	background: var(--color--brand--600);
 	border-color: var(--border--primary);
 	color: white;
-	--bg--hovered: var(--color--blue--700);
+	--bg--hovered: var(--color--brand--700);
 	--color--hovered: white;
 }
 
