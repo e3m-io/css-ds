@@ -26,49 +26,49 @@ a.btn {
 
 @mixin themeLight() {
 	.btn--wt-primary.btn--vt-normal {
-		background: var(--color--primary--600);
+		background: var(--color--brand--600);
 		color: white;
 		&:hover {
-			background: var(--color--primary--700);
+			background: var(--color--brand--700);
 		}
 		&:active {
-			background: var(--color--primary--800);
+			background: var(--color--brand--800);
 		}
 	}
 	.btn--wt-secondary.btn--vt-normal {
 		border: 1px solid rgba(0, 0, 0, 0.1);
 		&:hover {
-			background: var(--color--primary--25);
+			background: var(--color--brand--25);
 		}
 	}
 	.btn--wt-tertiary.btn--vt-normal {
 		&:hover {
-			color: var(--color--primary--600);
+			color: var(--color--brand--600);
 		}
 	}
 }
 
 @mixin themeDark() {
 	.btn--wt-primary.btn--vt-normal {
-		background: var(--color--primary--800);
+		background: var(--color--brand--800);
 		color: white;
 		&:hover {
-			background: var(--color--primary--700);
+			background: var(--color--brand--700);
 		}
 		&:active {
-			background: var(--color--primary--800);
+			background: var(--color--brand--800);
 		}
 	}
 	.btn--wt-secondary.btn--vt-normal {
-		background: var(--color--neutral--700);
+		background: var(--color--gray----700);
 		color: white;
 		&:hover {
-			background: var(--color--neutral--600);
+			background: var(--color--gray----600);
 		}
 	}
 	.btn--wt-tertiary.btn--vt-normal {
 		&:hover {
-			color: var(--color--primary--600);
+			color: var(--color--brand--600);
 		}
 	}
 }

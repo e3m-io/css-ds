@@ -5,26 +5,27 @@
 @use "../scss/styles/index" as styles;
 
 @mixin theme {
-	@include colors.colors;
+	@include colors.themeDark;
+	@include colors.aliasedColors;
 	@include scale.scale;
 	@include text.textScale;
 	@include text.textWeight;
 
-	--bg--sunken: var(--color--grey--900);
-	--color--sunken: var(--color--grey--300);
+	--bg--sunken: var(--color--gray--900);
+	--color--sunken: var(--color--gray--300);
 
-	--bg--default: var(--color--grey--800);
-	--color--default: var(--color--grey--300);
+	--bg--default: var(--color--gray--800);
+	--color--default: var(--color--gray--300);
 
-	--bg--raised: var(--color--grey--700);
-	--color--raised: var(--color--grey--300);
+	--bg--raised: var(--color--gray--700);
+	--color--raised: var(--color--gray--300);
 
-	--bg--overlay: var(--color--grey--700);
-	--color--overlay: var(--color--grey--300);
+	--bg--overlay: var(--color--gray--700);
+	--color--overlay: var(--color--gray--300);
 
-	--color--muted: var(--color--grey--400);
+	--color--muted: var(--color--gray--400);
 
-	--border--focused: var(--color--primary--700);
+	--border--focused: var(--color--brand--700);
 
 	@include components.themeDark;
 	@include styles.themeDark;
