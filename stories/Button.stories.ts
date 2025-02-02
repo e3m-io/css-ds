@@ -1,6 +1,5 @@
 import { fn } from "@storybook/test";
 import { type ButtonProps, getButtonClasses } from "../components/Button";
-import "../scss/components/btn.scss";
 
 type StorybookButtonProps = ButtonProps & { children: string };
 
