@@ -11,4 +11,59 @@
 	@include text.textScale;
 	@include text.textWeight;
 	@include styles.themeLight;
+
+	.bg-primary {
+		--bg: white;
+		--border-color: var(--color--gray--300);
+		--color: var(--color--gray--900);
+
+		&.hover:hover {
+			--bg: var(--color--gray--50);
+		}
+
+		background: var(--bg);
+		border-color: var(--border-color);
+		color: var(--color);
+	}
+
+	.bg-secondary {
+		--bg: var(--color--gray--50);
+		--border-color: var(--color--gray--200);
+		--color: var(--color--gray--900);
+
+		&.hover:hover {
+			--bg: var(--color--gray--100);
+		}
+
+		background: var(--bg);
+		border-color: var(--border-color);
+		color: var(--color);
+	}
+
+	.bg-brand-solid {
+		--bg: var(--color--brand--600);
+		--border-color: var(--color--brand--600);
+		--color: white;
+
+		&.hover:hover {
+			--bg: var(--color--brand--700);
+		}
+
+		background: var(--bg);
+		border-color: var(--border-color);
+		color: var(--color);
+	}
+
+	.bg-danger-solid {
+		--bg: var(--color--danger--600);
+		--color: white;
+
+		&.hover:hover {
+			--bg: var(--color--danger--700);
+		}
+
+		background: var(--bg);
+		border-color: var(--border-color);
+		color: var(--color);
+	}
 }

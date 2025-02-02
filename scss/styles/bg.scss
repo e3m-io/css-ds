@@ -5,44 +5,15 @@ $shades: "brand", "gray", "green", "blue", "danger";
 
 @each $shade in $shades {
 	@each $grade in $gradeScale {
-	  .bg-#{$shade}-#{$grade} {
-		background-color: var(--color--#{$shade}--#{$grade});
-		@if $grade >= 400 {
-		  color: white;
-		} @else {
-		  color: black;
+		.bg-#{$shade}-#{$grade} {
+			background-color: var(--color--#{$shade}--#{$grade});
+			@if $grade >= 400 {
+				color: white;
+			} @else {
+				color: black;
+			}
 		}
-	  }
 	}
-  }
-
-.bg-primary {
-	background: var(--bg--primary);
-	border-color: var(--border--primary);
-	color: var(--text--primary);
-	--bg--hovered: var(--bg--primary--hover);
-}
-
-.bg-secondary {
-	background: var(--bg--secondary);
-	border-color: var(--border--secondary);
-	color: var(--text--secondary);
-	--bg--hovered: var(--bg--secondary--hover);
-}
-
-.bg-brand-solid {
-	background: var(--bg--brand--solid);
-	border-color: var(--border--brand--solid);
-	color: white;
-	--bg--hovered: var(--color--brand--700);
-	--color--hovered: white;
-}
-
-.bg-danger-solid {
-	background: var(--color--danger--600);
-	color: white;
-	--bg--hovered: var(--color--danger--700);
-	--color--hovered: white;
 }
 
 .hover:hover {
