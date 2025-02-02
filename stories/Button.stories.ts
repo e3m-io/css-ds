@@ -31,3 +31,53 @@ export const Primary = {
 		weight: "primary",
 	} satisfies StorybookButtonProps,
 };
+
+export const AllVariants = () => `
+<div>
+	<button class="${getButtonClasses({
+		variant: "normal",
+		weight: "primary",
+	})}">Hello world</button>
+
+	<button class="${getButtonClasses({
+		variant: "normal",
+		weight: "secondary",
+	})}">Hello world</button>
+
+	<button class="${getButtonClasses({
+		variant: "normal",
+		weight: "tertiary",
+	})}">Hello world</button>
+
+	<button class="${getButtonClasses({
+		variant: "warning",
+		weight: "primary",
+	})}">Hello world</button>
+
+	<button class="${getButtonClasses({
+		variant: "warning",
+		weight: "secondary",
+	})}">Hello world</button>
+
+	<button class="${getButtonClasses({
+		variant: "warning",
+		weight: "tertiary",
+	})}">Hello world</button>
+
+	<button class="${getButtonClasses({
+		variant: "danger",
+		weight: "primary",
+	})}">Hello world</button>
+
+	<button class="${getButtonClasses({
+		variant: "danger",
+		weight: "secondary",
+	})}">Hello world</button>
+
+	<button class="${getButtonClasses({
+		variant: "danger",
+		weight: "tertiary",
+	})}">Hello world</button>
+
+</div>
+`;
