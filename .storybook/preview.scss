@@ -1,0 +1,6 @@
+@use "../themes/_light.scss" as light;
+@use "../scss/styles/index.scss";
+
+.sb-story {
+	@include light.theme;
+}
