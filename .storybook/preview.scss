@@ -2,6 +2,9 @@
 @use "../scss/components/index.scss" as components;
 @use "../scss/styles/index.scss";
 
-.sb-story {
+:root {
 	@include light.theme;
+	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+		helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+		sans-serif;
 }
