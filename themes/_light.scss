@@ -42,7 +42,7 @@
 
 	.bg-brand-solid {
 		--bg: var(--color--brand--600);
-		--border-color: var(--color--brand--600);
+		--border-color: var(--bg);
 		--color: white;
 
 		&.hover:hover {
@@ -56,6 +56,7 @@
 
 	.bg-danger-solid {
 		--bg: var(--color--danger--600);
+		--border-color: var(--bg);
 		--color: white;
 
 		&.hover:hover {
@@ -64,6 +65,78 @@
 
 		background: var(--bg);
 		border-color: var(--border-color);
+		color: var(--color);
+	}
+
+	.bg-danger {
+		--bg: var(--color--danger--200);
+		--border-color: var(--bg);
+		--color: var(--color--danger--900);
+
+		&.hover:hover {
+			--bg: var(--color--danger--300);
+		}
+
+		background: var(--bg);
+		border-color: var(--border-color);
+		color: var(--color);
+	}
+
+	.bg-warning-solid {
+		--bg: var(--color--warning--500);
+		--border-color: var(--bg);
+		--color: white;
+
+		&.hover:hover {
+			--bg: var(--color--warning--600);
+		}
+
+		background: var(--bg);
+		border-color: var(--border-color);
+		color: var(--color);
+	}
+
+	.bg-warning {
+		--bg: var(--color--warning--200);
+		--border-color: var(--bg);
+		--color: var(--color--warning--900);
+
+		&.hover:hover {
+			--bg: var(--color--warning--300);
+		}
+
+		background: var(--bg);
+		border-color: var(--border-color);
+		color: var(--color);
+	}
+
+	.text-brand {
+		--color: var(--color--brand--800);
+
+		&.hover:hover {
+			--color: var(--color--brand--900);
+		}
+
+		color: var(--color);
+	}
+
+	.text-danger {
+		--color: var(--color--danger--700);
+
+		&.hover:hover {
+			--color: var(--color--danger--800);
+		}
+
+		color: var(--color);
+	}
+
+	.text-warning {
+		--color: var(--color--warning--700);
+
+		&.hover:hover {
+			--color: var(--color--warning--800);
+		}
+
 		color: var(--color);
 	}
 }
